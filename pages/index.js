@@ -1,8 +1,8 @@
 import Header from './header'
+import Link from 'next/link'
 
 export default function Home() {
-  let title = "Next.js Index"
-  let message = "React Next.js sample page."
+  let title = "Index"
 
   return (
     <div>
@@ -11,7 +11,10 @@ export default function Home() {
       <div className="container">
         <h3 className="my-3 text-primary text-center">{title}</h3>
         <div className="alert alert-primary text-left">
-          <p className="h5">{message}</p>
+          <p>これはページ移動のサンプルです。</p>
+          <Link href="/other">
+            <a>Go to other page &gt;&gt;</a>
+          </Link>
         </div>
       </div>
     </div>
