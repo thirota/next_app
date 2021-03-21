@@ -7,7 +7,7 @@ export default function Home() {
   const { data, err } = useSWR(address)
 
   const onChange = (event)=> {
-    setAddress('/api/hello?id=' + event.target.value)
+    setAddress('/api/hello/' + event.target.value)
   }
 
   return (
