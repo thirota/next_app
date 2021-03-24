@@ -16,8 +16,9 @@ export default function Find() {
         setFind(e.target.value)
     })
     const doAction = ((e)=> {
-        db.collection('mydata').where('name', '==', find).get().then(snapshot=> {
-            snapshot.forEach((document)=> {
+        //db.collection('mydata').where('name', '==', find).get().then(snapshot=> {
+        db.collection('mydata').orderBy('name').startAt(find).endAt(find + '¥utf8ff').get().then(snapshot=> {
+                snapshot.forEach((document)=> {
                 const doc = document.data()
                 mydata.push(
                     <tr key={document.id}>
