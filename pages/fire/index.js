@@ -14,6 +14,7 @@ export default function Home() {
         //signInWithPopup doesn't work (blank page in dialog)
         //https://stackoverflow.com/questions/40467802/firebase-in-react-signinwithpopup-return-a-blank-page
         //https://github.com/firebase/firebaseui-web/issues/170
+        //https://github.com/thirota/next_app/issues/1
         auth.signInWithPopup(provider).then((result)=>{
 
         //signInWithRedirect makes loop...
