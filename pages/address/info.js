@@ -107,7 +107,7 @@ export default function Info() {
                     <button onClick={goBack} className="btn">Go Back</button>
                 </div>
                 <ul className="list-group">
-                    {msgData}
+                    {msgdata}
                 </ul>
             </Layout>
         </div>
