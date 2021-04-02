@@ -67,7 +67,7 @@ export default function Index() {
                     const doc = document.data()
                     addresses.push(
                         <li className="list-group-item list-group-item-action p-1" onClick={doLink} id={document.id}>
-                            {doc.flag ? '√' : ''}{doc.name} ({doc.mail})
+                            {doc.flag ? '✅' : ''}{doc.name} ({doc.mail})
                         </li>
                     )
                 })
